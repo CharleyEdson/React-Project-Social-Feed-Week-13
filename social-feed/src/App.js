@@ -9,8 +9,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <CreatePost /> */}
+      
       <DisplayPosts displayedPosts={posts}/>
+      <CreatePost />
              
       
 
