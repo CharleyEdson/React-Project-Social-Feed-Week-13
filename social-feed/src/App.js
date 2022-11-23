@@ -5,13 +5,19 @@ import CreatePost from './components/CreatePost/CreatePost'
 
 function App() {
 
-  const[posts, setPosts] = useState([{name: "Charley Edson", message: "This is a test post", button: false}])
+  const[posts, setPosts] = useState([{name: "Charley Edson", post: "This is a test post", button: false}])
+  
+  function addNewPost(post){
+    let tempPosts = [post, ...posts];
+    setPosts(tempPosts)
+  }
+
 
   return (
     <div className="App">
-      
+
+      <CreatePost addNewPost={addNewPost}/>
       <DisplayPosts displayedPosts={posts}/>
-      <CreatePost />
              
       
 

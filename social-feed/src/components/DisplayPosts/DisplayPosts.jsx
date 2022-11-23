@@ -6,7 +6,7 @@ const DisplayPosts = (props) => {
         return (
           <div>
             <div>{post.name}</div>
-            <div>{post.message}</div>
+            <p>{post.post}</p>
             <div>{post.button}</div>
           </div>
         );
