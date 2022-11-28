@@ -1,0 +1,75 @@
+.Navbar {
+    background-color: whitesmoke;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.Createpost {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #969696;
+    border-radius: 25px;
+    margin: auto;
+    width: 75%;
+    background-color: whitesmoke;
+  
+}
+
+
+.Displaypost {
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #969696;
+    background-color: whitesmoke;
+    border-radius: 25px;
+   
+}
+    
+.nameofpost {
+    font-weight: bold;
+}
+
+.button {
+    margin: 1em;
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+
+
+.createpostname {
+    margin: .5em;
+    font-weight: bold;
+}
+
+.createpostpost {
+    margin: .5em;
+}
+
+.createposttitles {
+    width: 3em;
+    margin: 1em;
+    color: darkgray;
+}
+
+.inputboxes {
+    width: 70%;
+}
+
+.thumbsup {
+    fill: green;
+}
+
+.thumbsdown {
+    fill: red;
+}
+
+.notliked {
+    fill: grey;
+}
