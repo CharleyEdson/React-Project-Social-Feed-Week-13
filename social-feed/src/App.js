@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import DisplayPosts from "./components/DisplayPosts/DisplayPosts";
 import CreatePost from "./components/CreatePost/CreatePost";
 import NavBar from "./components/NavBar/NavBar";
+import PostMapper from "./components/Post/PostMapper";
 import "./App.css";
-import Post from "./components/Post/Post";
 
 function App() {
   const [posts, setPosts] = useState([
     { id: 1, name: "Charley Edson", post: "This is a test post", isLiked: false, isDisliked: false},
+    { id: 2, name: "Pascal", post: "This is a test post number 2!", isLiked: false, isDisliked: false},
     
   ]);
 
   function addNewPost(post) {
-    let tempPosts = [post, ...posts];
+    let tempPosts = [...posts, post];
     setPosts(tempPosts);
   }
 
@@ -24,7 +24,7 @@ function App() {
       
       <CreatePost addNewPost={addNewPost} idNum={posts.length} class="Createpost" />
       <br></br>
-      <Post postArray={posts}/>
+      <PostMapper postArray={posts}/>
   
       <br></br>
     </div>

@@ -19,7 +19,7 @@ const CreatePost = (props) => {
       
       name: name,
       post: post,
-      id: id,
+      id: id + 1,
 
     };
     console.log(newPost);
