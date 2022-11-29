@@ -8,10 +8,15 @@ const CreatePost = (props) => {
   const [id, setId] = useState(props.idNum);
 // Need to add in variable so the id can be added each new post.
 
+  
+
+
   function handleSubmit(event) {
+    
     event.preventDefault();
+    
     let newPost = {
-        
+      
       name: name,
       post: post,
       id: id,
